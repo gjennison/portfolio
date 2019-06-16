@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Auckland Web Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imgs/logo.png">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="sass/style.css">
+    <link type="text/css" rel="stylesheet" href="t-scroll/public/theme/css/t-scroll.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+    <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#home">
+                    Home
+                </a>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div class="navbar-menu" id="navbarExample">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#about">
+                        about
+                    </a>
+                    <a class="navbar-item" href="#portfolio">
+                        portfolio
+                    </a>
+                    <a href="#solutions" class="navbar-item">
+                        solutions
+                    </a>
+                    <a class="navbar-item" href="#contact">
+                        contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-fullheight-with-navbar" id="home">
+        <div class="hero-body">
+            <div class="container">
+                <div class="shade">
+                    <h2 class="title">Auckland Based</h2>
+                    <div id="typed-strings">
+                        <h1 class="subtitle is-1">Web Design</h1>
+                        <h1 class="subtitle is-1">Web Dev</h1>
+                        <h1 class="subtitle is-1">Web Consultancy</h1>
+                    </div>
+                    <span class="subtitle is-1" id="typed"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TILES -->
+    <section class="section" id="tile-id">
+        <div class="container zoomOut">
+                <div class="tile is-ancestor">
+                        <div class="tile is-vertical is-8">
+                          <div class="tile">
+                            <div class="tile is-parent is-vertical">
+                              <article class="tile is-child notification is-primary">
+                                <a href="#what-we-do" id="link-about">
+                                <p class="title">Who we are</p>
+                                <h1 class="title">
+                                        <span class="icon"><i class="fas fa-cubes"></i></span>
+                                </h1>
+                                </a> 
+                              </article>
+                              <article class="tile is-child notification is-warning">
+                                <a href="#portfolio" id="link-about">
+                                <p class="title">Portfolio</p>
+                                <h1 class="title">
+                                        <span class="icon"><i class="fas fa-images"></i></span>
+                                </h1> 
+                                </a>
+                              </article>
+                            </div>
+                            <div class="tile is-parent">
+                              <article class="tile is-child notification is-info">
+                                <a href="#about" id="link-about">
+                                <p class="title">Meet George</p>
+                                <figure class="image" id="gj">
+                                  <img src="imgs/me.jpg" class="circle-img">
+                                </figure>
+                                </a>
+                              </article>
+                            </div>
+                          </div>
+                          <div class="tile is-parent">
+                            <article class="tile is-child notification is-danger">
+                                <a href="#contact" id="link-about">
+                                <p class="title">Contact</p> 
+                                <h1 class="title">
+                                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                                </h1> 
+                                </a>
+                            </article>
+                          </div>
+                        </div>
+                        <div class="tile is-parent">
+                          <article class="tile is-child notification is-success">
+                            <div class="content">
+                              <p class="title">What we do</p>
+                              <div class="content" id="icons-what-we-do">
+                                  <a href="#solutions" id="link-about">
+                                    <h1 class="title"><span class="icon"><i class="fas fa-camera"></i></span><p class="subtitle">Photography</p></h1>
+                                    <h1 class="title"><span class="icon"><i class="fas fa-palette"></i></span><p class="subtitle">Web Design</p></h1>
+                                    <h1 class="title"><span class="icon"><i class="fas fa-poll"></i></span><p class="subtitle">Marketing</p></h1>
+                                  </a>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <!-- ABOUT ME -->
+            <article class="message is-primary zoomOut" id="about">
+                <div class="message-body">
+                    <div class="columns is-8 is-variable is-vcentered">
+                        <div class="column is-one-third">
+                            <figure class="image ">
+                                <img class="image circle-img" src="imgs/me.jpg" alt="">
+                            </figure>
+                        </div>
+                    
+                        <div class="column">
+                            
+                            <h3 class="title">
+                                    Meet George
+                            </h3>
+                            <h3 class="subtitle">Surfer, Meditator, Tech nerd
+                                </h3>
+                            <p>
+                                    Hi, I'm George and I'm a highly passionate Web Designer and I love making my clients happy. I aim to treat everyone with the individuality and respect they deserve. I approach my clients with a sense of warmth and give personalised services. Your success is my success. If you're happy, I'm happy 
+                            </p>
+                        </div>
+                    
+                    </div>
+                </div>
+            </article>
+
+            <!-- PERSONAL APPROACH -->
+            
+            <article class="message is-primary zoomOut" id="what-we-do">
+                <div class="message-body">
+                    <div class="columns is-8 is-variable is-vcentered">
+                        <div class="column">
+                            <h3 class="title">
+                                Who we are
+                            </h3>
+                            <!-- <h3 class="subtitle">
+                                Sleek simple web solutions with a personal touch
+                            </h3> -->
+                            <p>
+                            </p>
+                                We are an Auckland based web consultancy firm developing brand-specific solutions perfectly suited to your needs.
+                                    We’re full service which means we’ve got you covered on design and content right through to marketing. You’ll form a lasting relationship with us as we help to maximise your business potential.
+                        </div>
+                        <div class="column is-one-third">
+                            <figure class="image ">
+                                <img class="image circle-img" src="imgs/laughing.jpg" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="message is-primary zoomOut" id="portfolio">
+                    <div class="message-body">
+                        <h1 class="title">Portfolio</h1>
+                        <a href="http://thevedaclub.nz/"><img src="imgs/veda.png" alt="" id="veda-link"></a>
+                    </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section zoomOut" id="solutions">
+        <div class="container">
+            <h1 class="title">
+                What we do
+            </h1>
+            <!-- <p class="subtitle">Sleek simple web solutions with a personal touch</p> -->
+            <p>Our services take you from start to finish in developing an online prescence. We'll want to get to know you and your business in order to develop tailor made web solutions.</p>
+            <p ><br></p>
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-half-mobile is-one-third-tablet">
+                    <h3 class="title">Professional Photos <br> <i class="fas fa-check"></i></h3>
+                </div>
+                <div class="column is-half-mobile is-one-third-tablet">
+                    <h3 class="title">Individual website <br> <i class="fas fa-check"></i></h3>
+                </div>
+                <div class="column is-half-mobile is-one-third-tablet">
+                    <h3 class="title">Social media <br> <i class="fas fa-check"></i></h3>
+                </div>
+                <div class="column is-half-mobile is-one-third-tablet">
+                    <h3 class="title">Online advertising <br> <i class="fas fa-check"></i></h3>
+                </div>
+                <div class="column is-half-mobile is-one-third-tablet">
+                    <h3 class="title">Data and analytics <br> <i class="fas fa-check"></i></h3>
+                </div>
+                <div class="column is-half-mobile is-one-third-tablet
+                ">
+                    <h3 class="title">Ongoing support<br>  <i class="fas fa-check"></i></h3>
+                </div>
+            </div>
+            <article class="message is-success">
+                    <div class="message-body">
+                        Prices start at $10 per week
+                        <p class="subtitle">No deposit, cancel anytime</p>
+                    </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <p class="title">Let's get in touch</p>
+            <p class="subtitle">Give me a call or flick me an email for any and all inquiries</p>
+            <p><i class="fas fa-map-marker"></i>&nbsp; Remuera, Auckland</p>
+            <p><i class="fas fa-phone"></i>&nbsp; +64 21 251 2773</p>
+            <p><i class="fas fa-envelope"></i>&nbsp; georjennison@gmail.com</p>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="t-scroll/public/theme/js/t-scroll.min.js"></script>
+    <script src="typed/lib/typed.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
