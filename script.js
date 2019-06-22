@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
   var typed = new Typed('#typed',{
     stringsElement: '#typed-strings',
     backSpeed: 40,
-    typeSpeed: 40,
+    typeSpeed: 25,
     loop: true,
-    showCursor: false
+    showCursor: true
   });
 
 var coll = document.getElementsByClassName("collapsible");
@@ -51,3 +51,32 @@ Tu.tScroll({
   't-element': '.zoomOut',
   't-duration': 0.8
 })
+
+new Chart(document.getElementById("myChart"), {
+  type: 'doughnut',
+  data: {
+    labels: ["Web Design", "Photography", "Marketing"],
+    datasets: [
+      {
+        backgroundColor: ["#3e95cd", "#3cba9f", "#8e5ea2"],
+        data: [50,20,30]
+      }
+    ]
+  },
+  options: {
+    legend: {
+      labels: {
+        fontColor: "#FFF",
+        fontSize: 18
+      }
+    },
+
+    animation: {
+      duration: 3000
+    },
+
+    tooltips:{ 
+      enabled: false
+    }
+  }
+});

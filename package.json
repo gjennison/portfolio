@@ -8,6 +8,8 @@
     "node-sass": "^4.12.0"
   },
   "dependencies": {
-    "@creativebulma/bulma-collapsible": "^1.0.4"
+    "@creativebulma/bulma-collapsible": "^1.0.4",
+    "chart": "^0.1.2",
+    "chart.js": "^2.8.0"
   }
 }

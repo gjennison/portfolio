@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
     <link rel="stylesheet" href="sass/style.css">
     <link type="text/css" rel="stylesheet" href="t-scroll/public/theme/css/t-scroll.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
@@ -48,92 +49,21 @@
     <section class="hero is-fullheight-with-navbar" id="home">
         <div class="hero-body">
             <div class="container">
-                <div class="shade">
-                    <h2 class="title">Auckland Based</h2>
-                    <div id="typed-strings">
-                        <h1 class="subtitle is-1">Web Design</h1>
-                        <h1 class="subtitle is-1">Web Dev</h1>
-                        <h1 class="subtitle is-1">Web Consultancy</h1>
-                    </div>
-                    <span class="subtitle is-1" id="typed"></span>
-                </div>
+                <h2 class="title">Auckland Based</h2>
+                <canvas id="myChart" height="80%"></canvas>
             </div>
         </div>
     </section>
 
-    <!-- TILES -->
-    <section class="section" id="tile-id">
-        <div class="container zoomOut">
-                <div class="tile is-ancestor">
-                        <div class="tile is-vertical is-8">
-                          <div class="tile">
-                            <div class="tile is-parent is-vertical">
-                              <article class="tile is-child notification is-primary">
-                                <a href="#what-we-do" id="link-about">
-                                <p class="title">Who we are</p>
-                                <h1 class="title">
-                                        <span class="icon"><i class="fas fa-cubes"></i></span>
-                                </h1>
-                                </a> 
-                              </article>
-                              <article class="tile is-child notification is-warning">
-                                <a href="#portfolio" id="link-about">
-                                <p class="title">Portfolio</p>
-                                <h1 class="title">
-                                        <span class="icon"><i class="fas fa-images"></i></span>
-                                </h1> 
-                                </a>
-                              </article>
-                            </div>
-                            <div class="tile is-parent">
-                              <article class="tile is-child notification is-info">
-                                <a href="#about" id="link-about">
-                                <p class="title">Meet George</p>
-                                <figure class="image" id="gj">
-                                  <img src="imgs/me.jpg" class="circle-img">
-                                </figure>
-                                </a>
-                              </article>
-                            </div>
-                          </div>
-                          <div class="tile is-parent">
-                            <article class="tile is-child notification is-danger">
-                                <a href="#contact" id="link-about">
-                                <p class="title">Contact</p> 
-                                <h1 class="title">
-                                        <span class="icon"><i class="fas fa-envelope"></i></span>
-                                </h1> 
-                                </a>
-                            </article>
-                          </div>
-                        </div>
-                        <div class="tile is-parent">
-                          <article class="tile is-child notification is-success">
-                            <div class="content">
-                              <p class="title">What we do</p>
-                              <div class="content" id="icons-what-we-do">
-                                  <a href="#solutions" id="link-about">
-                                    <h1 class="title"><span class="icon"><i class="fas fa-camera"></i></span><p class="subtitle">Photography</p></h1>
-                                    <h1 class="title"><span class="icon"><i class="fas fa-palette"></i></span><p class="subtitle">Web Design</p></h1>
-                                    <h1 class="title"><span class="icon"><i class="fas fa-poll"></i></span><p class="subtitle">Marketing</p></h1>
-                                  </a>
-                              </div>
-                            </div>
-                          </article>
-                        </div>
-                      </div>
-        </div>
-    </section>
-
-    <section class="section">
+    <section class="section" id="main">
         <div class="container">
             <!-- ABOUT ME -->
             <article class="message is-primary zoomOut" id="about">
                 <div class="message-body">
                     <div class="columns is-8 is-variable is-vcentered">
                         <div class="column is-one-third">
-                            <figure class="image ">
-                                <img class="image circle-img" src="imgs/me.jpg" alt="">
+                            <figure class="image">
+                                <img class="image circle-img" src="imgs/me.jpg" alt="" id="me-img">
                             </figure>
                         </div>
                     
@@ -142,8 +72,14 @@
                             <h3 class="title">
                                     Meet George
                             </h3>
-                            <h3 class="subtitle">Surfer, Meditator, Tech nerd
-                                </h3>
+                            <h3 class="subtitle">
+                                <div id="typed-strings">
+                                    <p>Surfer</p>
+                                    <p>Meditator</p>
+                                    <p>Tech nerd</p>
+                                </div>
+                                <span class="subtitle", id="typed"></span>
+                            </h3>
                             <p>
                                     Hi, I'm George and I'm a highly passionate Web Designer and I love making my clients happy. I aim to treat everyone with the individuality and respect they deserve. I approach my clients with a sense of warmth and give personalised services. Your success is my success. If you're happy, I'm happy 
                             </p>
@@ -162,9 +98,6 @@
                             <h3 class="title">
                                 Who we are
                             </h3>
-                            <!-- <h3 class="subtitle">
-                                Sleek simple web solutions with a personal touch
-                            </h3> -->
                             <p>
                             </p>
                                 We are an Auckland based web consultancy firm developing brand-specific solutions perfectly suited to your needs.
@@ -188,12 +121,11 @@
         </div>
     </section>
 
-    <section class="section zoomOut" id="solutions">
+    <section class="section zoomOut has-background-primary" id="solutions">
         <div class="container">
             <h1 class="title">
                 What we do
             </h1>
-            <!-- <p class="subtitle">Sleek simple web solutions with a personal touch</p> -->
             <p>Our services take you from start to finish in developing an online prescence. We'll want to get to know you and your business in order to develop tailor made web solutions.</p>
             <p ><br></p>
             <div class="columns is-mobile is-multiline">
@@ -238,6 +170,7 @@
 
     <script type="text/javascript" src="t-scroll/public/theme/js/t-scroll.min.js"></script>
     <script src="typed/lib/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

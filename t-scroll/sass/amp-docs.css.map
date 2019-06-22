@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,KAAK;CACpB",
+    "sources": [
+        "amp-docs.scss"
+    ],
+    "names": [],
+    "file": "amp-docs.css"
+}
