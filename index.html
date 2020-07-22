@@ -1,97 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Auckland Web Solutions</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="imgs/logo.png">
-    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
-    <link rel="stylesheet" href="sass/style.css">
-    <link type="text/css" rel="stylesheet" href="t-scroll/public/theme/css/t-scroll.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-</head>
-<body>
-    <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="#home">
-                    Home
-                </a>
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-
-            <div class="navbar-menu" id="navbarExample">
-                <div class="navbar-end">
-                    <a class="navbar-item" href="#about">
-                        about
-                    </a>
-                    <a class="navbar-item" href="#portfolio">
-                        portfolio
-                    </a>
-                    <a href="#solutions" class="navbar-item">
-                        solutions
-                    </a>
-                    <a class="navbar-item" href="#contact">
-                        contact
-                    </a>
-                </div>
-            </div>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />
+    <link rel="stylesheet" href="sass/style.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="t-scroll/public/theme/css/t-scroll.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <nav
+      class="navbar is-primary is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#home">
+            Home
+          </a>
+          <a
+            role="button"
+            class="navbar-burger burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
+
+        <div class="navbar-menu" id="navbarExample">
+          <div class="navbar-end">
+            <a class="navbar-item" href="#about">
+              about
+            </a>
+            <a class="navbar-item" href="#portfolio">
+              portfolio
+            </a>
+            <a href="#solutions" class="navbar-item">
+              solutions
+            </a>
+            <a class="navbar-item" href="#contact">
+              contact
+            </a>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <section class="hero is-fullheight-with-navbar" id="home">
-        <div class="hero-body">
-            <div class="container">
-                <h2 class="title">Auckland Based</h2>
-                <canvas id="myChart" height="80%"></canvas>
-            </div>
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title">Auckland Based</h2>
+          <canvas id="myChart" height="80%"></canvas>
         </div>
+      </div>
     </section>
 
     <section class="section" id="main">
-        <div class="container">
-            <!-- ABOUT ME -->
-            <article class="message is-primary zoomOut" id="about">
-                <div class="message-body">
-                    <div class="columns is-8 is-variable is-vcentered">
-                        <div class="column is-one-third">
-                            <figure class="image">
-                                <img class="image circle-img" src="imgs/me.jpg" alt="" id="me-img">
-                            </figure>
-                        </div>
-                    
-                        <div class="column">
-                            
-                            <h3 class="title">
-                                    Meet George
-                            </h3>
-                            <h3 class="subtitle">
-                                <div id="typed-strings">
-                                    <p>Surfer</p>
-                                    <p>Meditator</p>
-                                    <p>Tech nerd</p>
-                                </div>
-                                <span class="subtitle", id="typed"></span>
-                            </h3>
-                            <p>
-                                    Hi, I'm George and I'm a highly passionate Web Designer and I love making my clients happy. I aim to treat everyone with the individuality and respect they deserve. I approach my clients with a sense of warmth and give personalised services. Your success is my success. If you're happy, I'm happy 
-                            </p>
-                        </div>
-                    
-                    </div>
-                </div>
-            </article>
+      <div class="container">
+        <!-- ABOUT ME -->
+        <article class="message is-primary zoomOut" id="about">
+          <div class="message-body">
+            <div class="columns is-8 is-variable is-vcentered">
+              <div class="column is-one-third">
+                <figure class="image">
+                  <img
+                    class="image circle-img"
+                    src="imgs/me.jpg"
+                    alt=""
+                    id="me-img"
+                  />
+                </figure>
+              </div>
 
-            <!-- PERSONAL APPROACH -->
-            
-            <article class="message is-primary zoomOut" id="what-we-do">
+              <div class="column">
+                <h3 class="title">
+                  Meet George
+                </h3>
+                <h3 class="subtitle">
+                  <div id="typed-strings">
+                    <p>Surfer</p>
+                    <p>Meditator</p>
+                    <p>Tech nerd</p>
+                  </div>
+                  <span class="subtitle" , id="typed"></span>
+                </h3>
+                <p>
+                  Hi, I'm George and I'm a highly passionate Web Designer. I'm
+                  both a designer and a developer, so from your idea for the
+                  kind of website you'd like I can make a design and get a live
+                  website up and running.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PERSONAL APPROACH -->
+
+        <!-- <article class="message is-primary zoomOut" id="what-we-do">
                 <div class="message-body">
                     <div class="columns is-8 is-variable is-vcentered">
                         <div class="column">
@@ -110,67 +136,116 @@
                         </div>
                     </div>
                 </div>
-            </article>
+            </article> -->
 
-            <article class="message is-primary zoomOut" id="portfolio">
-                    <div class="message-body">
-                        <h1 class="title">Portfolio</h1>
-                        <a href="http://thevedaclub.nz/"><img src="imgs/veda.png" alt="" id="veda-link"></a>
-                    </div>
-            </article>
-        </div>
+        <article class="message is-primary zoomOut" id="portfolio">
+          <div class="message-body">
+            <h1 class="title">Portfolio</h1>
+            <a href="http://thevedaclub.nz/"
+              ><img src="imgs/veda.png" alt="" id="veda-link"
+            /></a>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="section zoomOut has-background-primary" id="solutions">
-        <div class="container">
-            <h1 class="title">
-                What we do
-            </h1>
-            <p>Our services take you from start to finish in developing an online prescence. We'll want to get to know you and your business in order to develop tailor made web solutions.</p>
-            <p ><br></p>
-            <div class="columns is-mobile is-multiline">
-                <div class="column is-half-mobile is-one-third-tablet">
-                    <h3 class="title">Professional Photos <br> <i class="fas fa-check"></i></h3>
-                </div>
-                <div class="column is-half-mobile is-one-third-tablet">
-                    <h3 class="title">Individual website <br> <i class="fas fa-check"></i></h3>
-                </div>
-                <div class="column is-half-mobile is-one-third-tablet">
-                    <h3 class="title">Social media <br> <i class="fas fa-check"></i></h3>
-                </div>
-                <div class="column is-half-mobile is-one-third-tablet">
-                    <h3 class="title">Online advertising <br> <i class="fas fa-check"></i></h3>
-                </div>
-                <div class="column is-half-mobile is-one-third-tablet">
-                    <h3 class="title">Data and analytics <br> <i class="fas fa-check"></i></h3>
-                </div>
-                <div class="column is-half-mobile is-one-third-tablet
-                ">
-                    <h3 class="title">Ongoing support<br>  <i class="fas fa-check"></i></h3>
-                </div>
-            </div>
-            <article class="message is-success">
-                    <div class="message-body">
-                        Prices start at $10 per week
-                        <p class="subtitle">No deposit, cancel anytime</p>
-                    </div>
-            </article>
+      <div class="container">
+        <h1 class="title">
+          What we do
+        </h1>
+        <p>
+          To start, you may have some ideas for how you want the website to
+          look, from that I will develop a quick prototype free of charge. From
+          there, using your feedback I can further develop the site. Once
+          completed, I will integrate my website into Wordpress so that you can
+          easily customise objects if you wish.
+        </p>
+        <p><br /></p>
+        <div class="columns is-mobile is-multiline">
+          <div class="column is-half-mobile is-one-third-tablet">
+            <h3 class="title">
+              Web Design <br />
+              <i class="fas fa-check"></i>
+            </h3>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet">
+            <h3 class="title">
+              Web Development <br />
+              <i class="fas fa-check"></i>
+            </h3>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet">
+            <h3 class="title">
+              Wordpress <br />
+              <i class="fas fa-check"></i>
+            </h3>
+          </div>
+          <!-- <div class="column is-half-mobile is-one-third-tablet">
+            <h3 class="title">
+              Professional Photos <br />
+              <i class="fas fa-check"></i>
+            </h3>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet">
+            <h3 class="title">
+              Individual website <br />
+              <i class="fas fa-check"></i>
+            </h3>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet">
+            <h3 class="title">
+              Social media <br />
+              <i class="fas fa-check"></i>
+            </h3>
+          </div> -->
+          <!-- <div class="column is-half-mobile is-one-third-tablet">
+            <h3 class="title">
+              Online advertising <br />
+              <i class="fas fa-check"></i>
+            </h3>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet">
+            <h3 class="title">
+              Data and analytics <br />
+              <i class="fas fa-check"></i>
+            </h3>
+          </div>
+          <div class="column is-half-mobile is-one-third-tablet">
+            <h3 class="title">
+              Ongoing support<br />
+              <i class="fas fa-check"></i>
+            </h3>
+          </div> -->
         </div>
+        <article class="message is-success">
+          <div class="message-body">
+            <!-- Prices start at $10 per week -->
+            Get in touch to discuss pricing
+            <!-- <p class="subtitle">No deposit, cancel anytime</p> -->
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="section" id="contact">
-        <div class="container">
-            <p class="title">Let's get in touch</p>
-            <p class="subtitle">Give me a call or flick me an email for any and all inquiries</p>
-            <p><i class="fas fa-map-marker"></i>&nbsp; Remuera, Auckland</p>
-            <p><i class="fas fa-phone"></i>&nbsp; +64 21 251 2773</p>
-            <p><i class="fas fa-envelope"></i>&nbsp; georjennison@gmail.com</p>
-        </div>
+      <div class="container">
+        <p class="title">Let's get in touch</p>
+        <p class="subtitle">
+          Give me a call or flick me an email for any and all inquiries
+        </p>
+        <p><i class="fas fa-map-marker"></i>&nbsp; Christchurch</p>
+        <p><i class="fas fa-phone"></i>&nbsp; +64 21 251 2773</p>
+        <p><i class="fas fa-envelope"></i>&nbsp; georjennison@gmail.com</p>
+      </div>
     </section>
 
-    <script type="text/javascript" src="t-scroll/public/theme/js/t-scroll.min.js"></script>
+    <script
+      type="text/javascript"
+      src="t-scroll/public/theme/js/t-scroll.min.js"
+    ></script>
     <script src="typed/lib/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
