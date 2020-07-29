@@ -89,7 +89,7 @@ body{
 
 /* COLUMN */
 
-.column img{
+#about .column img{
     padding: 5%;
     padding-top: 6%;
 }
@@ -117,11 +117,12 @@ body{
 
 /* PORTFOLIO */
 
-#veda-link{
+.portfolio-img{
     transition: all 1s;
+    padding: 0px;
 }
 
-#veda-link:hover{
+.portfolio-img:hover{
     box-shadow: 0px 0px 5px 1px rgb(117, 187, 63);
 }
 
