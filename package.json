@@ -5,7 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "bulma": "^0.7.5",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "@creativebulma/bulma-collapsible": "^1.0.4",
