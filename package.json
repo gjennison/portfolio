@@ -10,6 +10,6 @@
   "dependencies": {
     "@creativebulma/bulma-collapsible": "^1.0.4",
     "chart": "^0.1.2",
-    "chart.js": "^2.8.0"
+    "chart.js": "^2.9.4"
   }
 }
